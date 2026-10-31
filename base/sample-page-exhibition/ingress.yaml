@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sample-page-exhibition-ingress
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - sample.cagea1.com
+      secretName: sample-page-exhibition-tls
+  rules:
+    - host: sample.cagea1.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: sample-page-exhibition-service
+                port:
+                  name: http
+
