@@ -41,4 +41,4 @@ path "kv/data/sample-page-exhibition-prod-secret" {
 
 ## 이미지 갱신
 
-소스의 `PROD` 워크플로가 테스트 통과 후 Docker Hub에 이미지를 올립니다. 소스 저장소의 `ACTION_TOKEN`에 config 저장소 쓰기 권한이 있으면 이미지 태그도 자동 갱신합니다. 없으면 게시된 SHA를 이 저장소의 `overlays/prod/sample-page-exhibition/kustomization.yaml`에 기록하고 커밋합니다. 이미지가 게시된 뒤 config를 동기화하세요.
+소스의 `PROD` 워크플로가 테스트 통과 후 Docker Hub에 이미지를 올립니다. 소스 저장소의 `ACTION_TOKEN`에 config 저장소의 Contents 읽기·쓰기 권한이 필요하며 이미지 태그도 자동 갱신합니다. 토큰이 없으면 PROD가 시작 단계에서 실패합니다. 정상 실행은 이미지 게시와 config 커밋까지 완료해야 성공합니다. Argo CD는 이 저장소의 변경을 동기화해 새 이미지로 롤아웃합니다.
