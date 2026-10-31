@@ -7,4 +7,3 @@ images:
   - name: lightstone1/sample-page-exhibition-prod
     newName: lightstone1/sample-page-exhibition-prod
     newTag: latest
-

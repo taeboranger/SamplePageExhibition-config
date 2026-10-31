@@ -57,4 +57,3 @@ spec:
         - name: nginx-tmp
           emptyDir:
             sizeLimit: 64Mi
-

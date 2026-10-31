@@ -9,4 +9,3 @@ spec:
     kind: ClusterIssuer
   dnsNames:
     - sample.cagea1.com
-

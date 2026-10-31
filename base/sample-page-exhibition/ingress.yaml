@@ -19,4 +19,3 @@ spec:
                 name: sample-page-exhibition-service
                 port:
                   name: http
-
