@@ -6,4 +6,4 @@ resources:
 - ../../../base/sample-page-exhibition
 images:
 - name: lightstone1/sample-page-exhibition-prod
-  newTag: 658795403da638a5cc7008f9f9c2bae56a08ce91
+  newTag: d15d7f73d0a37da9fd31b750b450dc06831d72be
