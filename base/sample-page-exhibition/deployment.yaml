@@ -53,7 +53,7 @@ spec:
             - ALL
         env:
         - name: PUBLIC_ORIGIN
-          value: https://sample.cagea1.com
+          value: https://sample.anyproject.dev
         envFrom:
         - secretRef:
             name: sample-page-exhibition-prod-secret
