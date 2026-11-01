@@ -8,21 +8,8 @@ spec:
   - hosts:
     - sample.anyproject.dev
     secretName: sample-page-exhibition-anyproject-tls
-  - hosts:
-    - sample.cagea1.com
-    secretName: sample-page-exhibition-tls
   rules:
   - host: sample.anyproject.dev
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: sample-page-exhibition-service
-            port:
-              name: http
-  - host: sample.cagea1.com
     http:
       paths:
       - path: /

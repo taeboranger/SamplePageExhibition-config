@@ -45,4 +45,4 @@ path "kv/data/sample-page-exhibition-prod-secret" {
 
 ## Domain migration
 
-Primary: `sample.anyproject.dev`. The previous `sample.cagea1.com` ingress and certificate remain as compatibility aliases. New-domain TLS uses ClusterIssuer `letsencrypt-anyproject`; old-domain TLS keeps its original issuer. Cloudflare Tunnel routes and DNS are configured separately.
+Only `sample.anyproject.dev` is supported. The legacy cagea1.com hostname and TLS certificate resource have been retired. TLS uses ClusterIssuer `letsencrypt-anyproject`. Cloudflare Tunnel routes and DNS must not reintroduce the legacy alias.
